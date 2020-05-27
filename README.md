@@ -10,18 +10,18 @@ Copiar o arquivo wlan0.sh para o diretorio /opt e fornecer permissão de execuss
 Copiar o arquivo dhcpd.conf para o diretorio /etc
 
 Criar o diretorio e arquivo /var/db/dhcp.leases e fornecer permissão total ao arquivo.
-
-
+/n
+/n
 No arquivo /usr/local/etc/hostapd.conf edite o seguintes campos:
-
+/n
 interface=wlan0
 ssid=”nome_da_rede”
 wpa=2
 wpa_passphrase=”senha de no mínimo 8 dígitos”
-
-
+/n
+/n
 Adicione as seguintes linhas no arquivos >> /opt/.filetool.lst
-
+/n
 var/db/dhcpd.leases
 usr/local/etc/hostapd.conf
 etc/dhcpd.conf
