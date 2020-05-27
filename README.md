@@ -31,12 +31,11 @@ opt/wlan0.sh
 
 Adicione as seguintes linhas no arquivo >> /opt/bootlocal.sh para execução automatica ao iniciar o sistema
 
-sudo /usr/local/sbin/basic-firewall
-/opt/eth0.sh
-sleep 15s
-sudo /etc/iptables.sh
-sudo /opt/wlan0
-sudo hostapd -B /usr/local/etc/hostapd.conf &
+- sudo /usr/local/sbin/basic-firewall
+- /opt/eth0.sh
+- sleep 15s
+- sudo /etc/iptables.sh
+/ sudo /opt/wlan0
+\ sudo hostapd -B /usr/local/etc/hostapd.conf &
 
-/n
 Faça o backup filetool.sh –b e renicie o sistema reboot
